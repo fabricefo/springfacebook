@@ -1,8 +1,0 @@
-FROM maven:3.8.3-eclipse-temurin-17
-#VOLUME /tmp
-#COPY target/*.jar app.jar
-WORKDIR social-network
-COPY ./social-network .
-
-ENTRYPOINT ["mvn","spring-boot:run"]
-EXPOSE 8080
